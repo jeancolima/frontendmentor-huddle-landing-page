@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    /* Cores */
+    --cor-primaria: #674baf;
+    --cor-secundaria: #e882e8;
+    --branco: #fff;
+    --preto: #000;
+    /* Fontes */
+    --fonte-primaria: 'Open Sans', sans-serif;
+    --fonte-secundaria: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+}
+
+.logo {
+    padding: 3em 5em;
+    position: absolute;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    min-height: 100vh;
+    margin-top: 2em;
+}
+
+.leftside {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.leftside img {
+    width: 100%;
+}
+
+.rightside {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-family: var(--fonte-secundaria);
+    color: var(--branco);
+}
+
+.rightside h2 {
+    font-size: 2.7em;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+.rightside p {
+    line-height: 1.5em;
+}
+
+.btn-register {
+    width: 200px;   
+    height: 50px;
+    color: #575757;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+}
+
+.social-media {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 50px;
+    right: 50px;
+}
+
+.social-media ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.social-media ul a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--branco);
+    border-radius: 50%;
+    position: relative;
+}
+
+.social-media ul a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--branco);
+}
